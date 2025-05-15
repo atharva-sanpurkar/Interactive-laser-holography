@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser Holography Virtual Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Laser Holography Virtual Lab</h1>
+            <div class="student-info">
+                <p>Project by LG 6</p>
+                <p>Atharva Sachin Sanpurkar (Reg. No: 241U1R1040)</p>
+                <p>D.U Prasidha Chandra (Reg. No: 241U1R1052)</p>
+                <p>Under the guidance of Dr. M.C Ajay Kumar sir</p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#methodology">Methodology</a></li>
+                <li><a href="#principles">Principles</a></li>
+                <li><a href="simulation.html" class="simulation-link">Launch Simulation</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="introduction">
+                <h2>Introduction to Holography</h2>
+                <p>Holography is a revolutionary technique that enables the recording and reconstruction of three-dimensional images using light. Unlike conventional photography, which only captures the intensity of light, holography records both the amplitude and phase of light waves, creating a true three-dimensional representation of the object.</p>
+                
+                <div class="info-box">
+                    <h3>Historical Background</h3>
+                    <p>Holography was invented by Dennis Gabor in 1947, who later received the Nobel Prize in Physics for this groundbreaking work. The technique has evolved significantly since then, finding applications in various fields including security, medicine, and entertainment.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Key Concepts:</h3>
+                    <ul>
+                        <li>Laser light source - Provides coherent light necessary for interference</li>
+                        <li>Beam splitter - Divides the laser beam into reference and object beams</li>
+                        <li>Reference and object beams - Create the interference pattern</li>
+                        <li>Interference patterns - Record the 3D information</li>
+                        <li>Holographic recording - Captures the complete wave information</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="methodology">
+                <h2>Project Methodology</h2>
+                <div class="methodology-content">
+                    <h3>1. System Design</h3>
+                    <p>Our virtual lab simulates a basic holographic setup using p5.js, incorporating:</p>
+                    <ul>
+                        <li>3D visualization of the optical setup</li>
+                        <li>Interactive wavelength control</li>
+                        <li>Real-time interference pattern generation</li>
+                        <li>User-friendly interface for educational purposes</li>
+                    </ul>
+
+                    <h3>2. Implementation</h3>
+                    <p>The project was implemented using:</p>
+                    <ul>
+                        <li>p5.js for 3D visualization and animation</li>
+                        <li>HTML5 and CSS3 for the user interface</li>
+                        <li>JavaScript for interactive controls</li>
+                        <li>WebGL for 3D rendering</li>
+                    </ul>
+
+                    <h3>3. Features</h3>
+                    <ul>
+                        <li>Interactive 3D visualization of the holographic setup</li>
+                        <li>Real-time wavelength adjustment</li>
+                        <li>Dynamic interference pattern generation</li>
+                        <li>Educational content and explanations</li>
+                        <li>Responsive design for various devices</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="principles">
+                <h2>Principles of Holography</h2>
+                <p>Holography works on the principle of interference between two coherent light beams:</p>
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <h3>1. Reference Beam</h3>
+                        <p>A direct beam from the laser that serves as a reference for the phase information. This beam maintains a constant phase relationship with the object beam.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3>2. Object Beam</h3>
+                        <p>The beam that illuminates the object and carries information about its shape and position. This beam is scattered by the object, creating a complex wavefront.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3>3. Interference</h3>
+                        <p>When these beams meet, they create an interference pattern that contains complete 3D information about the object, including depth and perspective.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3>4. Recording</h3>
+                        <p>The interference pattern is recorded on a photosensitive material, creating a hologram that can reconstruct the original wavefront when illuminated.</p>
+                    </div>
+                </div>
+                <div class="interactive-demo">
+                    <h3>Interactive Demo</h3>
+                    <p>Click the button below to explore how wavelength affects the interference pattern in our interactive simulation.</p>
+                    <div class="cta-button">
+                        <a href="simulation.html" class="button">Launch Simulation</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Virtual Lab for Laser Holography - Educational Purpose</p>
+            <p>Department of Physics, Aurora Deemed to be University</p>
+        </footer>
+    </div>
+</body>
+</html>

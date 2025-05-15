@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holography Simulation - Virtual Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Holography Simulation</h1>
+            <a href="index.html" class="back-button">← Back to Lab</a>
+        </header>
+
+        <div class="simulation-page">
+            <div class="simulation-container">
+                <div id="simulation-window">
+                    <!-- P5.js canvas will be inserted here -->
+                </div>
+                <div class="controls">
+                    <h3>Wavelength Control</h3>
+                    <div class="slider-container">
+                        <span class="wavelength-label">Wavelength: <span id="wavelength-value">0.01</span></span>
+                        <input type="range" id="wavelength-slider" min="0.005" max="0.05" step="0.001" value="0.01">
+                    </div>
+                    <div class="simulation-info">
+                        <h3>How to Use:</h3>
+                        <ul>
+                            <li>Adjust the slider to change the wavelength</li>
+                            <li>Click and drag to rotate the view</li>
+                            <li>Scroll to zoom in/out</li>
+                        </ul>
+                        <div class="wavelength-info">
+                            <h4>What's happening?</h4>
+                            <p>As you increase the wavelength:</p>
+                            <ul>
+                                <li>The interference fringes become wider</li>
+                                <li>The pattern becomes more spaced out</li>
+                                <li>The holographic recording becomes less detailed</li>
+                            </ul>
+                            <p>As you decrease the wavelength:</p>
+                            <ul>
+                                <li>The interference fringes become narrower</li>
+                                <li>The pattern becomes more dense</li>
+                                <li>The holographic recording becomes more detailed</li>
+                            </ul>
+                        </div>
+                        <div class="interpretation">
+                            <h4>Interpretation of Results</h4>
+                            <p>The simulation demonstrates several key principles of holography:</p>
+                            <ul>
+                                <li><strong>Wavelength and Resolution:</strong> Shorter wavelengths create finer interference patterns, allowing for higher resolution holograms. This is why blue lasers (shorter wavelength) can create more detailed holograms than red lasers (longer wavelength).</li>
+                                <li><strong>Interference Pattern Formation:</strong> The pattern you see on the screen is created by the interference between the reference beam and the object beam. The spacing of these fringes is directly related to the wavelength of the light used.</li>
+                                <li><strong>3D Information:</strong> The interference pattern contains complete information about the object's shape and position in three dimensions. This is why holograms can recreate the full 3D image of an object.</li>
+                                <li><strong>Coherence:</strong> The simulation shows how coherent light (laser) is essential for creating stable interference patterns. The particles in the simulation represent the coherent nature of the laser beam.</li>
+                            </ul>
+                            <p>This simulation helps understand why different wavelengths are used for different applications in holography, from high-resolution medical imaging to large-scale display holograms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="simulation.js"></script>
+</body>
+</html> 
